@@ -1,2 +1,3 @@
 # SpringBoot_HibernateAndMore
-Learning in SB201 in Masai
+This is Unit 6 in the Masai School
+Unit name is SB201.
