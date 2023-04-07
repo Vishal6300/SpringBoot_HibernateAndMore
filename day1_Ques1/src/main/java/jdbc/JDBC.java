@@ -16,4 +16,11 @@ public class JDBC {
 		Connection conn= DriverManager.getConnection(url,username,password);
 		return conn;
 	}
+	
+	public static void main(String[] args) throws Exception {
+		JDBC jd= new JDBC();
+		
+		Connection conn= jd.getConnection();
+		System.out.println(conn);
+	}
 }
