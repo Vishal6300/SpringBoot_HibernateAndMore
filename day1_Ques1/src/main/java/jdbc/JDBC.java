@@ -2,11 +2,12 @@ package jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import dao.EmployeeDao;
+import dao.EmployeeDaoImpl;
 
 public class JDBC {
 	
-	public Connection getConnection() throws Exception{
-		
+	public static Connection getConnection() throws Exception{
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		String url="jdbc:mysql://localhost:3306/SB201";
@@ -17,10 +18,5 @@ public class JDBC {
 		return conn;
 	}
 	
-	public static void main(String[] args) throws Exception {
-		JDBC jd= new JDBC();
-		
-		Connection conn= jd.getConnection();
-		System.out.println(conn);
-	}
+
 }
