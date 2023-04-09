@@ -8,6 +8,7 @@ Learned about how to install Maven Project.
 Day_2:
 Learned About Hibernate and ORM.
 Connection between the ORM and the database.
+
 Day_3:
 Learned About how to create table in Database from Our Java class.
 CRUD operation has also been discussed.
