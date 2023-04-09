@@ -10,3 +10,6 @@ Connection between the ORM and the database.
 Day_3:
 Learned About how to create table in Database from Our Java class.
 CRUD operation has also been discussed.
+
+Day_4:
+Learned the new JDBC technique.
