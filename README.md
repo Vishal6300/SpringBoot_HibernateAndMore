@@ -16,3 +16,5 @@ CRUD operation has also been discussed.
 Day_4:
 Learned the new JDBC technique
 and Use of EntityManagerFactory and EntityManager
+
+Day_5:
