@@ -19,4 +19,4 @@ and Use of EntityManagerFactory and EntityManager
 
 Day_5:
 Learned about the four query.
-Named query,native query, general query, embeded
+Named query,native query, general query, embeded.
