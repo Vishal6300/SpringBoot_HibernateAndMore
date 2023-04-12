@@ -23,3 +23,6 @@ Named query,native query, general query, embeded.
 
 Day_6:
 Learned deeply about the queries.
+
+Day_7:
+Learned about Hibernate mapping.
