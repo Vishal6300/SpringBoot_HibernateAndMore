@@ -18,12 +18,18 @@ public class LawyerDaoImpl implements Interface{
 
 	private Exception LawyerException(String string) {
 		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
 	public String saveLawyer(Lawyer lawyer) {
 		// TODO Auto-generated method stub
+		EntityManager em= EmUtil.getConnection();
+		Lawyer Updatelawyer= em.find(Lawyer.class, lawyer.getId());
+		if(Updatelawyer!= null) throw new LawyerException("Lawyer already present");
+		
+		em.persist(Updatelawyer);
 		return null;
 	}
 
