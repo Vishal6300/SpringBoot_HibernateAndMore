@@ -17,7 +17,7 @@ public class TravelPackage {
 	private double price;
 	private Set<Booking> bookings;
 /*
- packageId : int
+ 	packageId : int
 	packageName : String
 	price : double
 	bookings : Set<Booking>
