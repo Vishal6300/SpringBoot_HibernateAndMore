@@ -28,3 +28,4 @@ Day_7:
 Learned about Hibernate mapping(relationship between the tables.
 
 Day_8:
+PSC Classes (Making the Traveler App).
