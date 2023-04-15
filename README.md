@@ -26,3 +26,5 @@ Learned deeply about the queries.
 
 Day_7:
 Learned about Hibernate mapping(relationship between the tables.
+
+Day_8:
