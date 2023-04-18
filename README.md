@@ -34,4 +34,4 @@ Day_9:
 Learned Spring Introduction.
 
 Day_10:
-Learning Spring Core, Spring Container and many more things about the tight coupling and loose coupling.
+Learned Spring Core, Spring Container and many more things about the tight coupling and loose coupling.
