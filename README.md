@@ -36,4 +36,4 @@ Learned Spring Introduction.
 Day_10:
 Learned Spring Core, Spring Container and many more things about the tight coupling and loose coupling.
 
-Day_11: Learned about Spring bean classes.
+Day_11: Learned about Spring bean class and constructor.
