@@ -43,4 +43,4 @@ Day_12:
 Distributed Application Architecture, Introduction of Webapplication.
 
 Day_13:
-Learned Role of Servlet
+Learned Role of Servlet and HTTP Protocol.
