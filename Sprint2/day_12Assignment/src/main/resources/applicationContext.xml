@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Configure Employee Beans -->
+	<bean id="employee1" class="Employee">
+		<constructor-arg value="1" />
+		<constructor-arg value="John" />
+		<constructor-arg value="Doe" />
+		<constructor-arg value="50000" />
+	</bean>
+
+	<bean id="employee2" class="Employee">
+		<constructor-arg value="2" />
+		<constructor-arg value="Jane" />
+		<constructor-arg value="Doe" />
+		<constructor-arg value="60000" />
+	</bean>
+
+	<bean id="employee3" class="Employee">
+		<constructor-arg value="3" />
+		<constructor-arg value="Bob" />
+		<constructor-arg value="Smith" />
+		<constructor-arg value="70000" />
+	</bean>
+
+	<!-- Configure Department Beans -->
+	<bean id="department1" class="Department">
+		<constructor-arg value="101" />
+		<constructor-arg value="Sales" />
+		<constructor-arg value="New York" />
+		<constructor-arg ref="employee1" />
+	</bean>
+
+	<bean id="department2" class="Department">
+		<constructor-arg value="102" />
+		<constructor-arg value="Marketing" />
+		<constructor-arg value="San Francisco" />
+		<constructor-arg ref="employee2" />
+	</bean>
+
+	<bean id="department3" class="Department">
+		<constructor-arg value="103" />
+		<constructor-arg value="Engineering" />
+		<constructor-arg value="Seattle" />
+		<constructor-arg ref="employee3" />
+	</bean>
+
+	<!-- Configure Demo Bean -->
+	<bean id="demo" class="Demo" lazy-init="true">
+		<property name="theMap">
+			<map>
+				<entry key-ref="department1" value-ref="employee1" />
+				<entry key-ref="department2" value-ref="employee2" />
+				<entry key-ref="department3" value-ref="employee3" />
+			</map>
+		</property>
+		<property name="init-method" value="myInit" />
+		<property name="destroy-method" value="cleanUp" />
+	</bean>
+
+</beans>
