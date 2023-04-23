@@ -7,6 +7,8 @@
 
     <bean id="mb" class="com.masai.MyBusinessClass">
         <!-- collaborators and configuration for this bean go here -->
+        <property name="age" value="23" />
+        <property name="name" value="Ram"></property>
     </bean>
 
     
