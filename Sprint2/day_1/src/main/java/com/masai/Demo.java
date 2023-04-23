@@ -8,8 +8,8 @@ public class Demo {
 	public static void main(String[] args) {
 		ApplicationContext ctx= new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		MyBusinessClass obj= ctx.getBean("mb",MyBusinessClass.class);
+		Travel obj= ctx.getBean("tr",Travel.class);
 		
-		obj.funA();
+		obj.journey();
 	}
 }
