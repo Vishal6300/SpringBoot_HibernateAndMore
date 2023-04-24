@@ -10,6 +10,10 @@ public class Main {
 		ApplicationContext ctx= new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		Demo demo= (Demo) ctx.getBean("demo");
+		
+		demo.showDetails();
+		
+		((ClassPathXmlApplicationContext) ctx).close();
 	}
 
 }

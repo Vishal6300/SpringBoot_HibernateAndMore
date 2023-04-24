@@ -1,64 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<!-- Configure Employee Beans -->
-	<bean id="employee1" class="Employee">
-		<constructor-arg value="1" />
-		<constructor-arg value="John" />
-		<constructor-arg value="Doe" />
-		<constructor-arg value="50000" />
+	<bean id="sales" class="com.masai.Department">
+		<constructor-arg value="100"/>
+		<constructor-arg value="Sales"/>
+		<constructor-arg value="New York"/>
 	</bean>
 
-	<bean id="employee2" class="Employee">
-		<constructor-arg value="2" />
-		<constructor-arg value="Jane" />
-		<constructor-arg value="Doe" />
-		<constructor-arg value="60000" />
+	<bean id="marketing" class="com.masai.Department">
+		<constructor-arg value="200"/>
+		<constructor-arg value="Marketing"/>
+		<constructor-arg value="Chicago"/>
 	</bean>
 
-	<bean id="employee3" class="Employee">
-		<constructor-arg value="3" />
-		<constructor-arg value="Bob" />
-		<constructor-arg value="Smith" />
-		<constructor-arg value="70000" />
+	<bean id="accounts" class="com.masai.Department">
+		<constructor-arg value="300"/>
+		<constructor-arg value="Accounts"/>
+		<constructor-arg value="Los Angeles"/>
 	</bean>
 
-	<!-- Configure Department Beans -->
-	<bean id="department1" class="Department">
-		<constructor-arg value="101" />
-		<constructor-arg value="Sales" />
-		<constructor-arg value="New York" />
-		<constructor-arg ref="employee1" />
+	<bean id="john" class="com.masai.Employee">
+		<constructor-arg value="101"/>
+		<constructor-arg value="John"/>
+		<constructor-arg value="123 Main St, New York, NY"/>
+		<constructor-arg value="100000"/>
 	</bean>
 
-	<bean id="department2" class="Department">
-		<constructor-arg value="102" />
-		<constructor-arg value="Marketing" />
-		<constructor-arg value="San Francisco" />
-		<constructor-arg ref="employee2" />
+	<bean id="jane" class="com.masai.Employee">
+		<constructor-arg value="102"/>
+		<constructor-arg value="Jane"/>
+		<constructor-arg value="456 State St, Chicago, IL"/>
+		<constructor-arg value="90000"/>
 	</bean>
 
-	<bean id="department3" class="Department">
-		<constructor-arg value="103" />
-		<constructor-arg value="Engineering" />
-		<constructor-arg value="Seattle" />
-		<constructor-arg ref="employee3" />
+	<bean id="jim" class="com.masai.Employee">
+		<constructor-arg value="103"/>
+		<constructor-arg value="Jim"/>
+		<constructor-arg value="789 Broadway, Los Angeles, CA"/>
+		<constructor-arg value="80000"/>
 	</bean>
 
-	<!-- Configure Demo Bean -->
-	<bean id="demo" class="Demo" lazy-init="true">
-		<property name="theMap">
+	<bean id="theMap" class="java.util.HashMap">
+		<constructor-arg>
 			<map>
-				<entry key-ref="department1" value-ref="employee1" />
-				<entry key-ref="department2" value-ref="employee2" />
-				<entry key-ref="department3" value-ref="employee3" />
+				<entry key-ref="sales" value-ref="john"/>
+				<entry key-ref="marketing" value-ref="jane"/>
+				<entry key-ref="accounts" value-ref="jim"/>
 			</map>
-		</property>
-		<property name="init-method" value="myInit" />
-		<property name="destroy-method" value="cleanUp" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="demo" class="com.masai.Demo" lazy-init="true" init-method="myInit" destroy-method="cleanUp">
+		<property name="theMap" ref="theMap"/>
 	</bean>
 
 </beans>
