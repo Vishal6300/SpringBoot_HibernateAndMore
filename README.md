@@ -52,4 +52,4 @@ Day_15:
 Creating our first Sprint-Boot project. 
 
 Day_16:
-Overview of Sprint-Boot project and
+Overview of Sprint-Boot project and the implementation
