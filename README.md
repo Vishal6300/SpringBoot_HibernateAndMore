@@ -59,4 +59,4 @@ JPA Introduction and implementation.
 
 Day_18:
 
-Working example of Sprint boot application.
+Working example of Spring-boot application.
