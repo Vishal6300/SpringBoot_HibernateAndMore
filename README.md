@@ -58,5 +58,4 @@ Day_17:
 JPA Introduction and implementation.
 
 Day_18:
-
 Working example of Spring-boot application.
