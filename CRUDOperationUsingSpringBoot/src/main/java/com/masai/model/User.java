@@ -47,6 +47,19 @@ public class User {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+
+	public User(int id, String name, String city, String status) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.city = city;
+		this.status = status;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", city=" + city + ", status=" + status + "]";
+	}
 	
 	
 }
