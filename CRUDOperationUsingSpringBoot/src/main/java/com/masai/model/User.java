@@ -60,6 +60,11 @@ public class User {
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", city=" + city + ", status=" + status + "]";
 	}
+
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 }
