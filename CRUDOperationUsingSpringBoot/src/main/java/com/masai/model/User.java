@@ -12,7 +12,7 @@ public class User {
 	private int id;
 	
 	private String name;
-	private String address;
+	private String city;
 	
 	private String status;
 }
