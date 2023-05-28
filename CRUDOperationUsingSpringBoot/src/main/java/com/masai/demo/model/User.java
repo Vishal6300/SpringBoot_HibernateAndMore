@@ -1,4 +1,4 @@
-package com.masai.model;
+package com.masai.demo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
