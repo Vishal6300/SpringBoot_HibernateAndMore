@@ -61,3 +61,4 @@ Day_18:
 Working example of Spring-boot application and the use of POSTMAN and SwaggerUI.
 
 Day_19:
+Rivision about annotations.
